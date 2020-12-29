@@ -61,7 +61,7 @@
           </li>
         </ul>
       </li>
-    </ul><br/>
+    </ul> <br/>
     <em>$INSTALL_PATH = the path where XAMPP files are located*</em>
   </li>
 </ul>
