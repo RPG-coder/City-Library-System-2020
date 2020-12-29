@@ -1,0 +1,360 @@
+/* --- Common --- */
+*{
+  box-sizing: border-box;
+  padding: 0; margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+/* --- Header ---*/
+h1{
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  word-spacing: 2px;
+  letter-spacing: 1.5px;
+}
+nav a{text-decoration: none;}
+nav,nav .container,nav .row{
+  height: 14vh;
+  overflow: hidden;
+  background-color: #2F3542;
+  color: white;
+}
+#logo-container img{height: 100%;}
+#logo-container{
+  padding: 1% 5%;
+  height: 22%;
+  width: auto;
+}
+.link-set{float:right;height: 100%; list-style: none; padding: 5%;}
+.link-set li {padding: 0 30px; display: inline;}
+.link-set a{
+  color: white;
+  text-decoration: none;
+}
+#user-greeting *{
+  color: #1ABC9C;
+  font-weight: 400;
+}
+#user-greeting,.button-white{
+  background-color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+/* --- Main --- */
+main{min-height: 76vh;}
+main#home::before, #reader-background, #admin-background{
+  content: "";
+  top: 0; left: 0;
+  position: absolute;
+  background: url(../images/homeImage.jpg);
+  background-size: cover; 
+  background-attachment: fixed;
+  filter: blur(0.75px);
+  z-index: -1
+}
+main#home::before{width: 100%; height: 100%;}
+#reader-background, #admin-background{width: 100%; height: 85%;}
+
+/* --- Search Box --- */
+#searchbox-container{
+  height: 17vh;
+}
+#reader #searchbox-container, #admin #searchbox-container{
+  background: #2F3542;
+  color: white;
+  margin-top: 25vh;
+  margin-bottom: 20vh;
+}
+#search-form{
+  height: inherit;
+  margin: 30px;
+}
+#searchbox-container label{
+  font-size: 2.75rem;
+}
+#search-box{
+  height: 90%;width: 100%;
+  font-size: 1.5rem;
+  padding: 8px;
+  border: 2.5px solid transparent;
+  background: #E6E6E6;
+}
+#search-box:focus{border: 2.5px solid #a4a4a4;}
+#reader #search-box, #admin #search-box{background: white;}
+#reader #search-box:focus, #admin #search-box:focus{border: 2.5px solid #e4e4e4;}
+#searchbox-container button, #searchbox-container button>img{
+  height: 100%;
+  width: auto;
+  background: none;
+  padding-left: 1%;
+}
+
+/* --- Main Menu --- */
+.hr-white, .hr-grey{
+  margin: 15px auto;
+  width: 95%;
+  height: 1.5px;
+  border-radius: 1px;
+}
+.hr-white{background-color: white;}
+.hr-grey{background-color: #e4e4e4;}
+.login-card h2{font-size: 1.5rem;}
+.login-card{
+  margin: 15% 15%;
+  padding: 15px;
+  background-color: white;
+  height: 45vh;
+}
+.login-card label, input{
+  font-size: 1.1rem;
+  display: block;
+}
+button, input,button:focus, input:focus{
+  border: none;
+  outline: none;
+}
+.login-card button, .login-card input, 
+.login-card button:focus, .login-card input:focus{
+  padding: 5px 30px;
+  border-radius: 5px;
+}
+#home #reader-card button, #reader-card input, 
+#home #reader-card button:focus, #reader-card input:focus
+{margin: 10px auto;}
+
+.login-card input[type='text'], .login-card input[type='password']{
+  background: #F0F0F0;
+  padding: 10px 15px;
+  width: 100%;
+}
+.button-green{
+  background-color: #1ABC9C;
+  color: white;
+}
+
+/* --- Reader Menu --- */
+#reader-tag-line{
+  background-color: #1ABC9C;
+  height: 15vh;
+}
+.reader-decor-dash{
+  display: inline-block;
+  height: 10px;
+  margin: 8% 2.5%;
+  padding: 10px;
+  width: 100px;
+  background-color: white;
+  border-radius: 50px;
+}
+#reader-tag-line h2{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 5%;
+}
+
+/* --- Reader Cards --- */
+#reader-submenu{
+  height: 50vh;
+}
+.submenu-card>div{height: 100%; background: #E6E6E6;}
+.submenu-card-head{
+  height: 40%;
+}.submenu-card-body{height: 60%;}
+.submenu-card-body h3{font-size: 1.5rem;}
+#reader button, #admin button{
+  padding: 10px 30px;
+}
+.button-black{
+  background-color: #2F3542;
+  color: white;
+  padding: 10px 20px;
+}
+
+.submenu-card-head{
+  padding: 5%;
+}
+.submenu-card-head div{
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  color: white;
+  background-color: #1ABC9C;
+  text-align: center;
+  font-size: 4rem;
+  border-radius: 50%;
+
+}
+
+#reader-submenu-main{
+  height: 60vh;
+  background: #E6E6E6;
+}
+#reader-submenu-main .text-body{
+  padding: 6% !important;
+}
+#reader-submenu-main button{
+  padding: 10px 20px;
+}
+
+/* --- Search Page --- */
+#search-results .tag-box{
+  width: 35px;
+  height: 35px;
+  margin: 1px auto;
+  padding: 5px;
+  text-align: center;
+  background: #2F3542;
+  color: white;
+  font-weight: bold;
+}
+
+
+/* --- View Document --- */
+#document-view{height: 80vh}
+#document-view h2{
+    font-size: 1.5rem;
+    color: #1ABC9C;
+    width: 100%;
+}
+.doc-card-head{height:52%}
+.doc-card-body{height:48%}
+.doc-card-tag{
+    margin: 20px auto 10px auto;
+    height: 275px;
+    width: 225px;
+    background-color: #2F3542;
+    font-size: 8rem;
+    text-align: center;
+    color: white;
+}
+@media only screen and (max-height: 730px){
+    main{min-height: unset;}
+    #document-view{height: 80vh}
+    .doc-card-head{height:unset}
+    .doc-card-body{height:unset}
+    .doc-card-tag{
+        margin:20px auto 10px auto;
+        height: 200px;
+        width: 150px;
+        background-color:#2F3542;
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 764px){
+    main{min-height: unset;}
+    #document-view{height: unset}
+    .doc-card-tag{
+        margin:20px auto 10px auto;
+        height: 200px;
+        width: 150px;
+        background-color:#2F3542;
+        font-size: 4rem;
+    }   
+}
+
+@media only screen and (max-width: 740px){
+  
+  .search-instance{
+    text-align: center;
+  }
+  #reader-submenu-main{
+    height: unset;
+  }
+}
+/* --- Footer --- */
+footer{
+    background-color: #2F3542;
+    height: 12.5vh;
+    padding: 10px;
+    color:white;
+}
+
+@media only screen and (max-height: 730px){
+  .login-card{
+    padding: 20px 15px;
+    height: unset;
+  }
+  #searchbox-container label{
+    font-size: 2.0rem;
+  }
+  #searchbox-container{
+    height: unset;
+    padding: 30px auto;
+  } 
+  #search-box{
+    font-size: 16px;
+    padding: 10px;
+    word-wrap: break-word;
+  }
+
+  #reader-tag-line{
+    height: unset;
+    padding: 20px auto;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  #reader-submenu{height: unset; margin: 20px auto;}
+  #reader-submenu-main{
+    height: unset;
+  }
+}
+
+@media only screen and (max-width:767px){
+  #logo-container{height: 75px;}
+  nav,nav .container,nav .row{height: 75px;}
+  nav.open,nav.open .container,nav.open .row{height: unset; overflow: unset;}
+  .link-set{float:unset;height: auto; padding: 0;}
+  .link-set li {padding: 0; display: block;margin: 5px;}
+  .login-card{
+    padding: 20px 15px;
+    height: unset;
+  }
+
+  .display-none-md{
+    display: none;
+  }
+  #searchbox-container label{font-size: 2.0rem;}
+  #searchbox-container{
+    height: unset;
+    padding: 30px auto;
+  } 
+  #search-box{
+    font-size: 16px;
+    padding: 10px;
+    word-wrap: break-word;
+  }
+  #reader-tag-line{
+    height: unset;
+    padding: 20px auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 730px){
+  #reader-tag-line{
+    height: unset;
+    padding: 20px auto;
+    text-align: center;
+    margin-top: 70%;
+    
+  }
+  #reader-background{width: 100%; height: 100%;}
+  #reader-submenu{height: unset; margin: 20px auto;}
+}
+
+@media only screen and (max-width: 540px){
+  #search-box{
+    height: unset;
+    font-size: 12px;
+    padding: 10px;
+    word-wrap: break-word;
+  }
+  #searchbox-container button, #searchbox-container button>img{
+    background: none;
+    padding-left: 1%;
+    height: 90%;
+    width: auto;
+  }
+}

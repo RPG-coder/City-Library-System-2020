@@ -1,0 +1,92 @@
+<link rel='preconnect' href='https://fonts.gstatic.com'>
+<link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css' integrity='sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2' crossorigin='anonymous'>
+
+<header>
+  <nav class='open'>
+    <div class='container-fluid'>
+      <div class='row'>
+          <div class='col-12 col-md-4'>
+            <a>
+              <div id='logo-container'>
+                <picture><img src='./images/library-logo.svg' alt='City Library Logo'/></picture>
+                <h1>CITY LIBRARY</h1>
+              </div>           
+            </a>
+          </div>
+          <div class='col-12 col-md-8'>
+            <!-- if logged then display below -->
+            <div class='link-set'>
+              <ul>
+                <li><a href='./home.php'>Home</a></li>
+                <li><a href='./profile.php'>Profile</a></li>
+                <li><a href='./about.php'>About</a></li>
+                <li id='user-greeting'><a href='./about.php'>WELCOME USER,</a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<script src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
+<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js' integrity='sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s' crossorigin='anonymous'></script>
+
+
+<style>
+  /* --- Common --- */
+  *{
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+  }
+  h1{
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  #logo-container img{
+    height: 100%;
+  }
+  #logo-container{
+    padding: 1% 5%;
+    height: 100%;
+    width: auto;
+  }
+  nav a{text-decoration: none;}
+  nav,nav .container,nav .row{
+    height: 15vh;
+    overflow: hidden;
+    background: #2F3542;
+    color: white;
+  }
+  .link-set{float:right;height: 100%; list-style: none; padding: 5%;}
+  .link-set li {padding: 0 30px; display: inline;}
+  .link-set a{
+    color: white;
+    text-decoration: none;
+  }
+  #user-greeting *{
+    color: #1ABC9C;
+    font-weight: 400;
+  }
+  #user-greeting{
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+  }
+
+  @media only screen and (max-width:767px){
+    #logo-container{
+        height: 75px;
+    }
+    nav,nav .container,nav .row{height: 75px;}
+    nav.open,nav.open .container,nav.open .row{height: unset; overflow: unset;}
+    .link-set{float:unset;height: auto; padding: 0;}
+    .link-set li {padding: 0; display: block;margin: 5px;}
+  }
+</style>
