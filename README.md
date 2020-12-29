@@ -43,7 +43,10 @@
   <li>
     <ul list-style-type: lower-alpha>Steps
       <li>Install Xampp: https://www.apachefriends.org/index.html</li>
-      <li>Place the Frontend folder htdoc*: <em>"$INSTALL_PATH\xampp\htdocs\Github"</em></li>
+      <li>
+        Place the Frontend folder htdoc*: <em>"$INSTALL_PATH\xampp\htdocs"</em><br/>
+        Run Apache in XAMPP and then Open Browser with address, <em>localhost/Frontend/</em>, to view the app.
+      </li>
       <li>Open MySQL Admin: <br>
         <ul>Steps:
           <li>1. `$ mysql -u root -p`</li>
